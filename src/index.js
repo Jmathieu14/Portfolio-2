@@ -1,7 +1,7 @@
 import 'jquery';
 import React from 'react';
 import { hydrate, render } from 'react-dom';
-import './assets/css/overhaul.css';
+import './assets/sass/overhaul.sass';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

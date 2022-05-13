@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
+import { ANGULAR_DIVIDER_WRAPPER_CLASS_NAME } from './constants';
 import { getAngularDividerClassName } from './functions';
+import './index.sass';
 
 const AngularDivider = ({
     divOrientation,
@@ -28,7 +30,10 @@ const AngularDivider = ({
     });
 
     return (
-        <div className='ang-div-wrapper' style={{ backgroundColor: backgroundColor }}>
+        <div
+            className={ANGULAR_DIVIDER_WRAPPER_CLASS_NAME}
+            style={{ backgroundColor: backgroundColor }}
+        >
             <div
                 className={getAngularDividerClassName(divOrientation)}
                 ref={element}
