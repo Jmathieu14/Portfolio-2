@@ -4,10 +4,11 @@
   "private": true,
   "main": "./src/App.js",
   "scripts": {
-    "start-dev": "webpack --mode development && react-scripts start",
+    "dev": "webpack --mode development && react-scripts start",
     "start": "webpack --mode production && react-scripts start",
     "build": "webpack --mode production && react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "sass-watch": "sass --watch src/assets/sass:src/assets/css src/assets/sass_components:src/assets/css_components"
   },
@@ -24,6 +25,11 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
     ]
   },
   "dependencies": {
@@ -54,8 +60,8 @@
     "serve": "^13.0.2",
     "webpack-cli": "^4.7.2"
   },
-  "description": "Portfolio website for Jacques Mathieu",
-  "repository": "https://github.com/Jmathieu14/Portfolio.git",
+  "description": "Portfolio website for Jacques Mathieu (Version 2)",
+  "repository": "https://github.com/Jmathieu14/Portfolio-2.git",
   "author": "Jacques Mathieu",
-  "license": "MIT"
+  "license": "GPL3"
 }

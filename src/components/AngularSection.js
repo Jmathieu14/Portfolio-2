@@ -1,6 +1,6 @@
 import React from 'react';
 import { resolveStaticPath } from '../utility/StaticPathResolver';
-import AngularDivider from './AngularDivider';
+import AngularDivider from './angular-divider';
 import ExpandableContent from './ExpandableContent';
 import { SectionLink, SectionLinksHeader, SectionLinkHoverText } from './SectionLink';
 const { genKey, my_display_dimensions, recordDisplayDimensions, checkObjAndKey } = require('./Utility');
