@@ -11,7 +11,7 @@ Object {
       >
         <div
           class="angular-divider"
-          style="width: 0px; border-top: 0px solid transparent; border-right: 0px solid black;"
+          style="width: 100px;"
         />
       </div>
     </div>
@@ -23,7 +23,7 @@ Object {
     >
       <div
         class="angular-divider"
-        style="width: 0px; border-top: 0px solid transparent; border-right: 0px solid black;"
+        style="width: 100px;"
       />
     </div>
   </div>,
