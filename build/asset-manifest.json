@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.b23a9a3b.chunk.css",
-    "main.js": "/static/js/main.1d37e6be.chunk.js",
-    "main.js.map": "/static/js/main.1d37e6be.chunk.js.map",
+    "main.css": "/static/css/main.1fb0a795.chunk.css",
+    "main.js": "/static/js/main.f341a2fb.chunk.js",
+    "main.js.map": "/static/js/main.f341a2fb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c0bb1579.js",
     "runtime-main.js.map": "/static/js/runtime-main.c0bb1579.js.map",
-    "static/css/2.19627560.chunk.css": "/static/css/2.19627560.chunk.css",
-    "static/js/2.d5315849.chunk.js": "/static/js/2.d5315849.chunk.js",
-    "static/js/2.d5315849.chunk.js.map": "/static/js/2.d5315849.chunk.js.map",
+    "static/css/2.6020aa8c.chunk.css": "/static/css/2.6020aa8c.chunk.css",
+    "static/js/2.c5f9930e.chunk.js": "/static/js/2.c5f9930e.chunk.js",
+    "static/js/2.c5f9930e.chunk.js.map": "/static/js/2.c5f9930e.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.19627560.chunk.css.map": "/static/css/2.19627560.chunk.css.map",
-    "static/css/main.b23a9a3b.chunk.css.map": "/static/css/main.b23a9a3b.chunk.css.map",
-    "static/js/2.d5315849.chunk.js.LICENSE.txt": "/static/js/2.d5315849.chunk.js.LICENSE.txt",
+    "static/css/2.6020aa8c.chunk.css.map": "/static/css/2.6020aa8c.chunk.css.map",
+    "static/css/main.1fb0a795.chunk.css.map": "/static/css/main.1fb0a795.chunk.css.map",
+    "static/js/2.c5f9930e.chunk.js.LICENSE.txt": "/static/js/2.c5f9930e.chunk.js.LICENSE.txt",
     "static/media/4419136 - cloud logo sound sound cloud soundcloud square icon.3105a1f2.svg": "/static/media/4419136 - cloud logo sound sound cloud soundcloud square icon.3105a1f2.svg",
     "static/media/4419149 - linkedin logo social icon.a76d033c.svg": "/static/media/4419149 - linkedin logo social icon.a76d033c.svg",
     "static/media/4419165 - circle github outline social-media icon.2ce7d161.svg": "/static/media/4419165 - circle github outline social-media icon.2ce7d161.svg",
@@ -33,13 +33,13 @@
     "static/media/jm logo 3 -- project - text_to_path.bf25f5a2.svg": "/static/media/jm logo 3 -- project - text_to_path.bf25f5a2.svg",
     "static/media/jm logo 3 -- work - text_to_path.1ac84505.svg": "/static/media/jm logo 3 -- work - text_to_path.1ac84505.svg",
     "static/media/list_alt-48dp.c6af9136.svg": "/static/media/list_alt-48dp.c6af9136.svg",
-    "static/media/overhaul.css": "/static/media/slick.c94f7671.ttf"
+    "static/media/overhaul.sass": "/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.c0bb1579.js",
-    "static/css/2.19627560.chunk.css",
-    "static/js/2.d5315849.chunk.js",
-    "static/css/main.b23a9a3b.chunk.css",
-    "static/js/main.1d37e6be.chunk.js"
+    "static/css/2.6020aa8c.chunk.css",
+    "static/js/2.c5f9930e.chunk.js",
+    "static/css/main.1fb0a795.chunk.css",
+    "static/js/main.f341a2fb.chunk.js"
   ]
 }
