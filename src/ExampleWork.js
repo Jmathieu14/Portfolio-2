@@ -1,5 +1,4 @@
 import React from 'react';
-import PageTitle from './components/PageTitle';
 import { FontImport } from './components/FunctionComponents';
 import PageHeader from './components/PageHeader';
 import SectionList from './components/SectionList';
@@ -10,7 +9,6 @@ import { fontImportLink, myOpacityStyle, pageHeaderLayout } from './utility/Page
 // Set up layout of homepage
 const pageLayout = {
     "font-import-link" : fontImportLink,
-    "pageTitle": "Jacques Mathieu - Work Examples",
     "page-header": pageHeaderLayout("work examples"),
     "modalSpecs": {  
     },
@@ -126,12 +124,10 @@ const pageLayout = {
     ]
 }
 
-console.log(pageLayout["pageTitle"]);
 
 function ExampleWork() {
     return (
         <>
-            <PageTitle text={pageLayout["pageTitle"]} />
             <FontImport path="https://fonts.googleapis.com/css?family=Montserrat:400,500,800,900|Roboto|Source+Sans+Pro&display=swap" />
             <PageHeader pageHeader={pageLayout["page-header"]} sections={pageLayout["angular-sections"]} />
             <SectionList sections={pageLayout["angular-sections"]} />

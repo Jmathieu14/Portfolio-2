@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Angular Divider Functions resizeAngularDivider() should throw expected exception 1`] = `"Cannot resize an AngularDivider that is null;"`;

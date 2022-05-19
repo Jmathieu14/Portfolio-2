@@ -199,7 +199,7 @@ section.page-header
     position: relative
     opacity: 0
     transition: all 0.4s ease-out
-    height: calc(100% - #{$page-header-H} - #{$ang-div-base-H})
+    height: calc(100% - #{$page-header-H} - #{$angular-divider-base-height})
     
 .section-list.show
     opacity: 1
@@ -323,7 +323,7 @@ $mobile-menu-option-padding: math.div($mobile-menu-vert-padding, 2)
                     +default_transition()
     .angular-section
         min-height: $mobile-as-min-H
-        height: calc(#{$mobile-as-H} - #{$mobile-as-top-padding} - #{$mobile-as-bottom-padding} - #{$ang-div-full-H})
+        height: calc(#{$mobile-as-H} - #{$mobile-as-top-padding} - #{$mobile-as-bottom-padding} - #{$angular-divider-full-height})
         padding-bottom: $mobile-as-bottom-padding
         padding-top: $mobile-as-top-padding
         .angular-content

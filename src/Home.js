@@ -1,5 +1,4 @@
 import React from 'react';
-import PageTitle from './components/PageTitle';
 import { FontImport } from './components/FunctionComponents';
 import PageHeader from './components/PageHeader';
 import SectionList from './components/SectionList';
@@ -10,7 +9,6 @@ import { fontImportLink, myOpacityStyle, pageHeaderLayout } from './utility/Page
 // Set up layout of homepage
 const pageLayout = {
     "font-import-link": fontImportLink,
-    "pageTitle": "Jacques Mathieu - Home",
     "page-header": pageHeaderLayout(),
     "angular-sections": [
         {
@@ -42,7 +40,8 @@ const pageLayout = {
             "hoverBGName": "lightBlueGrey",
             "hoverBG": "#DDEEDD",
             "bannerSpecs": {
-                "bannerImg": imageHelper.customLogos.jmProjectLogo
+                "bannerImg": imageHelper.customLogos.jmProjectLogo.image,
+                "alt": imageHelper.customLogos.jmProjectLogo.alt
             },
             "sectionLinks": [
                 {
@@ -69,7 +68,8 @@ const pageLayout = {
             "hoverBGName": "gray",
             "hoverBG": "#AAA",
             "bannerSpecs": {
-                "bannerImg": imageHelper.customLogos.jmWorkLogo
+                "bannerImg": imageHelper.customLogos.jmWorkLogo.image,
+                "alt": imageHelper.customLogos.jmWorkLogo.alt
             },
             "sectionLinks": [
                 {
@@ -103,12 +103,9 @@ const pageLayout = {
     ]
 }
 
-console.log(pageLayout["pageTitle"]);
-
 function Home() {
     return (
         <>
-            <PageTitle text={pageLayout["pageTitle"]} />
             <FontImport path="https://fonts.googleapis.com/css?family=Montserrat:400,500,800,900|Roboto|Source+Sans+Pro&display=swap" />
             <PageHeader pageHeader={pageLayout["page-header"]} sections={pageLayout["angular-sections"]} />
             <SectionList sections={pageLayout["angular-sections"]} />
