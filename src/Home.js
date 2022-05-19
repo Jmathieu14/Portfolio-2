@@ -40,7 +40,8 @@ const pageLayout = {
             "hoverBGName": "lightBlueGrey",
             "hoverBG": "#DDEEDD",
             "bannerSpecs": {
-                "bannerImg": imageHelper.customLogos.jmProjectLogo
+                "bannerImg": imageHelper.customLogos.jmProjectLogo.image,
+                "alt": imageHelper.customLogos.jmProjectLogo.alt
             },
             "sectionLinks": [
                 {
@@ -67,7 +68,8 @@ const pageLayout = {
             "hoverBGName": "gray",
             "hoverBG": "#AAA",
             "bannerSpecs": {
-                "bannerImg": imageHelper.customLogos.jmWorkLogo
+                "bannerImg": imageHelper.customLogos.jmWorkLogo.image,
+                "alt": imageHelper.customLogos.jmWorkLogo.alt
             },
             "sectionLinks": [
                 {

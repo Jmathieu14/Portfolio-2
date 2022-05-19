@@ -31,9 +31,9 @@ import setupStep4 from '../assets/img/Sparksales/Step 4 signup process.png';
 export const imageHelper = {
     customLogos: {
         mainLogo: mainLogo,
-        jmMusicLogo: { image: jmMusicLogo, alt: "JM Music Logo" },
-        jmProjectLogo: jmProjectLogo,
-        jmWorkLogo: jmWorkLogo
+        jmMusicLogo: { image: jmMusicLogo, alt: "JM Music Section Logo" },
+        jmProjectLogo: { image: jmProjectLogo, alt: "JM Projects Section Logo" },
+        jmWorkLogo: { image: jmWorkLogo, alt: "JM Work Section Logo" }
     },
     utilityLogos: {
         mobileMoreIcon: mobileMoreIcon,
