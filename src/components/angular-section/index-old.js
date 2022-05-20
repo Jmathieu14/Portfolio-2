@@ -1,11 +1,11 @@
 import React from 'react';
 import { resolveStaticPath } from '../utility/StaticPathResolver';
-import AngularDivider from './angular-divider';
-import ExpandableContent from './ExpandableContent';
+import AngularDivider from '../angular-divider';
+import ExpandableContent from '../expandable-content';
 import { SectionLink, SectionLinksHeader, SectionLinkHoverText } from './SectionLink';
 const { genKey, my_display_dimensions, recordDisplayDimensions, checkObjAndKey } = require('./Utility');
 
-export default class AngularSection extends React.Component {
+class AngularSection extends React.Component {
     constructor(props) {
         super(props);
         this.name = props.name;
@@ -128,8 +128,9 @@ export default class AngularSection extends React.Component {
                             {section_links}
                         </div>
                     </div>
-                    <ExpandableContent eCSpecs={this.eCSpecs} state={this.state}
-                        handleContentExpansion={this.handleContentExpansion} />
+                    <ExpandableContent
+                        expandableContentSpecs={this.eCSpecs}
+                    />
                 </div>
                 <SectionLinkHoverText specs={this.getSLHoverTextSpecs()} />
                 <AngularDivider divOrientation={this.divOrientation}
@@ -138,3 +139,5 @@ export default class AngularSection extends React.Component {
         );
     }
 }
+
+export default AngularSection;

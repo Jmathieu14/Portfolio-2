@@ -1,4 +1,4 @@
-import AngularSection from './AngularSection';
+import AngularSection from './angular-section/index-old';
 const { genKey, redirectToGitHubPages, SECT_LIST_CLASS } = require('./Utility');
 const React = require('react');
 

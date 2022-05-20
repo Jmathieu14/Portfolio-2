@@ -31,7 +31,8 @@ const pageLayout = {
             ],
             "expandableContentSpecs": {
                 "show": false,
-                "icon": imageHelper.utilityLogos.expandIcon
+                "icon": imageHelper.utilityLogos.expandIcon,
+                "alt": "Expand Content Icon"
             },
             "opacityAsTab": myOpacityStyle
         },
