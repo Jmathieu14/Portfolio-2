@@ -8,6 +8,7 @@
     "start": "webpack --mode production && react-scripts start",
     "build": "webpack --mode production && react-scripts build",
     "test": "react-scripts test",
+    "test:watch": "react-scripts test",
     "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject"
   },

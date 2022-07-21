@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import ExpandableContent from '.';
 import store from '../../store';
 
@@ -125,7 +125,7 @@ describe('ExpandableContent', () => {
             expect(resetContentExpandedSpy).toHaveBeenCalledTimes(0);
         });
 
-        xit('should call store.expandableContent.resetContentExpanded() on click', async () => {
+        it('should call store.expandableContent.resetContentExpanded() on click', async () => {
             expandedContentStore.setContentExpanded('test-ref');
             clearMocks();
             initMocks();
@@ -141,7 +141,7 @@ describe('ExpandableContent', () => {
             />);
 
             fireEvent.click(expandContentButton);
-            expect(setContentExpandedSpy).toHaveBeenCalledTimes(0);
+            expect(setContentExpandedSpy).toHaveBeenCalledTimes(1);
             expect(resetContentExpandedSpy).toHaveBeenCalledTimes(1);
         });
 
