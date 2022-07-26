@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontImport } from './components/FunctionComponents';
 import PageHeader from './components/PageHeader';
-import SectionList from './components/SectionList';
+import SectionList from './components/section-list';
 import { imageHelper } from './utility/ImageHelper';
 import { fontImportLink, myOpacityStyle, pageHeaderLayout } from './utility/PageLayoutHelper'
 

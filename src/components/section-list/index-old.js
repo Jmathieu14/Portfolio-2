@@ -1,5 +1,5 @@
-import AngularSection from './angular-section/index';
-const { genKey, redirectToGitHubPages, SECT_LIST_CLASS } = require('./Utility');
+import AngularSection from '../angular-section/index';
+const { genKey, redirectToGitHubPages, SECT_LIST_CLASS } = require('../Utility');
 const React = require('react');
 
 // A component that wraps one or more AngularSection

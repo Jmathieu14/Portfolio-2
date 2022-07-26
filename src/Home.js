@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontImport } from './components/FunctionComponents';
 import PageHeader from './components/PageHeader';
-import SectionList from './components/SectionList';
+import SectionList from './components/section-list';
 import { imageHelper } from './utility/ImageHelper';
 import { fontImportLink, myOpacityStyle, pageHeaderLayout } from './utility/PageLayoutHelper'
 
@@ -109,7 +109,8 @@ function Home() {
         <>
             <FontImport path="https://fonts.googleapis.com/css?family=Montserrat:400,500,800,900|Roboto|Source+Sans+Pro&display=swap" />
             <PageHeader pageHeader={pageLayout["page-header"]} sections={pageLayout["angular-sections"]} />
-            <SectionList sections={pageLayout["angular-sections"]} />
+            <SectionList />
+            {/* <SectionList sections={pageLayout["angular-sections"]} /> */}
         </>
     );
 }
