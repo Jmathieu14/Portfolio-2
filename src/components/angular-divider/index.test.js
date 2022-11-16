@@ -34,12 +34,12 @@ describe('AngularDivider', () => {
         expect(getAngularDividerClassName).toHaveBeenCalledWith(undefined);
     });
 
-    it('should call getAngularDividerClassName() with the given \'divOrientation\'', () => {
+    it('should call getAngularDividerClassName() with the given \'dividerOrientation\'', () => {
         const dividerOrientation = 'rev';
         angularDivider = render(
             <AngularDivider
                 {...defaultProps}
-                divOrientation={dividerOrientation}
+                dividerOrientation={dividerOrientation}
             />
         );
         expect(getAngularDividerClassName).toHaveBeenCalled();
@@ -55,7 +55,7 @@ describe('AngularDivider', () => {
         angularDivider = render(
             <AngularDivider
                 {...defaultProps}
-                divOrientation={dividerOrientation}
+                dividerOrientation={dividerOrientation}
             />
         );
         expectedDividerElement = angularDivider.container.querySelector(`.${ANGULAR_DIVIDER_BASE_CLASS_NAME}`);

@@ -4,13 +4,13 @@ import { getAngularDividerClassName, resizeAngularDivider } from './functions';
 import './index.sass';
 
 const AngularDivider = ({
-    divOrientation,
+    dividerOrientation,
     backgroundColor
 }) => {
     const element = React.createRef();
 
     useEffect(() => {
-        resizeAngularDivider(element.current, divOrientation);
+        resizeAngularDivider(element.current, dividerOrientation);
     });
 
     return (
@@ -19,7 +19,7 @@ const AngularDivider = ({
             style={{ backgroundColor: backgroundColor }}
         >
             <div
-                className={getAngularDividerClassName(divOrientation)}
+                className={getAngularDividerClassName(dividerOrientation)}
                 ref={element}
             />
         </div>
