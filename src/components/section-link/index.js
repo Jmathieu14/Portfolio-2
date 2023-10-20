@@ -12,18 +12,19 @@ const SectionLink = ({
         return `${sectionLinkStore?.name.replace(' ', '-')}-arrow`;
     }
     return (<>
-        {/* {sectionLinkStore &&
+        {
             <div className='section-link'>
-                <a href=''>
+                <a href={sectionLinkStore?.url}>
                     <img
                         alt={sectionLinkStore?.name}
                         src={sectionLinkStore?.logo}
                     />
                 </a>
-                <div style={arrowStyle} id={getArrowId()} className="sl-hover-arrow">
+                {/* style={arrowStyle} */}
+                <div id={getArrowId()} className="sl-hover-arrow">
                 </div>
             </div>
-        } */}
+        }
     </>);
 };
 

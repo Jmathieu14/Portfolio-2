@@ -109,8 +109,7 @@ function Home() {
         <>
             <FontImport path="https://fonts.googleapis.com/css?family=Montserrat:400,500,800,900|Roboto|Source+Sans+Pro&display=swap" />
             <PageHeader pageHeader={pageLayout["page-header"]} sections={pageLayout["angular-sections"]} />
-            <SectionList />
-            {/* <SectionList sections={pageLayout["angular-sections"]} /> */}
+            <SectionList sections={pageLayout["angular-sections"]} />
         </>
     );
 }

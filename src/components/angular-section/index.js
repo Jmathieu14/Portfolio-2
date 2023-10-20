@@ -8,6 +8,10 @@ import BannerStore from '../../store/page-layout/section-list/angular-section/ba
 import { MouseEventEnum } from '../../model/mouseEvent';
 import AngularDivider from '../angular-divider';
 
+const getSectionLinkList = (name) => {
+    return name ? store.pageLayout.sectionList.getSection(name)?.sectionLinkList : [];
+}
+
 const AngularSection = ({
     name,
     hoverBackgroundColor,
@@ -15,23 +19,23 @@ const AngularSection = ({
     dividerOrientation
 }) => {
     const [backgroundColor, setBackgroundColor] = useState(null);
+    const [sectionLinkList] = useState(getSectionLinkList(name));
     const handleHoverState = (mouseEvent) => {
         setBackgroundColor(mouseEvent === MouseEventEnum.Enter ? hoverBackgroundColor : null);
     }
 
-    const getSectionLinkList = () => {
-        return name ? store.pageLayout.sectionList.getSection(name)?.sectionLinkList : [];
-    }
+    const sectionLinks = sectionLinkList.map((sectionLinkStore) => {
+        const key = genKey(sectionLinkStore?.name);
+        return React.createElement(SectionLink, { key: key, sectionLinkStore: sectionLinkStore })
+    });
 
-    const sectionLinks = getSectionLinkList().map((sectionLinkStore) =>
-        <SectionLink key={genKey(sectionLinkStore?.name)} sectionLinkStore={sectionLinkStore} />);
     return (
         <>
             <div id={name}
                 className="angular-section"
                 onMouseEnter={() => handleHoverState(MouseEventEnum.Enter)}
                 onMouseLeave={() => handleHoverState(MouseEventEnum.Leave)}
-                style={backgroundColor ? {backgroundColor: backgroundColor} : null}
+                style={backgroundColor ? { backgroundColor: backgroundColor } : null}
             >
                 <div className="angular-content">
                     {banner.getBannerHTML()}
